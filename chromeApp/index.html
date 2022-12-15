@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VanillaJS Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <main>
+        <div id="dDay" class="container">
+            <div class="dDay">
+                <div class="dDay_header">
+                    <h2>D-Day</h2>
+                    <form id="dDayForm" class="hidden">
+                        <input type="text" placeholder="Enter D-Day name!" required maxlength="20"/>
+                        <input type="text" placeholder="yyyy-mm-dd" required maxlength="10"/>
+                        <br>
+                        <input type="submit" value="save"/>
+                    </form>
+                </div>
+                <p id="dDayClock" class="hidden">
+                    <span></span>
+                    <span></span>
+                </p>
+            </div>
+            <div class="header">
+                <div class="login">
+                    <form id="loginForm" class="hidden">
+                        <input type="text" placeholder="Write your name!" required maxlength="13"/>
+                        <input type="submit" value="Enter"/>
+                    </form>
+                    <h1 id="calendar" class="hidden"></h1>
+                </div>
+                <div class="clock">
+                    <span id="clock">0000-00-00<br>00:00:00</span>
+                </div>
+            </div>
+            <div class="todoInput">
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="Add your task!"/>
+                </form>
+            </div>
+            <div class="todo">
+                <div class="todo-container">
+                    <h2>Not yet</h2>
+                    <ul class="todo-list js-pendingList"></ul>
+                </div>
+                <div class="todo-container">
+                    <h2>Finished</h2>
+                    <ul class="todo-list js-finishedLsit"></ul>
+                </div>
+            </div>
+            <div class="weather">
+                <h2 class="js-weather">Today's weather</h2>
+                <div class="js-weather-today"></div>
+                <div class="js-weather-weekly"></div>
+            </div>
+        </div>
+    </main>
+    <script src="src/clock.js"></script>
+    <script src="src/calendar.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/bg.js"></script>
+  </body>
+</html>
